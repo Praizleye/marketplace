@@ -86,7 +86,7 @@ const slides = [
     id: 4,
     title: "Disruptive Marketplace Mentor (Host)",
     image: SpeakerFour,
-    name: "Dr. Mannaseh Dogon",
+    name: "Mannaseh Dogon",
     shortBio:
       "Manasseh Dogon is the metropolitan lead steward of THE METROPOLITAN CHURCH, a movement and a ministry commissioned with the vision of “raising a breed that will reveal God’s glory, infiltrate governments and command influence” headquartered in Abuja, Nigeria.",
   },
