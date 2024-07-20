@@ -64,7 +64,7 @@ const options = {
   type: "loop",
   perPage: 1,
   perMove: 1,
-  // pagination: false,
+  pagination: false,
   autoplay: true,
   rewind: true,
   pauseOnHover: false,
