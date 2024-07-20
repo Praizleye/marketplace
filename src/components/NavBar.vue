@@ -5,7 +5,9 @@
   >
     <div class="flex items-center justify-between">
       <div class="relative w-[50%]">
-        <img :src="Logo" alt="Logo" />
+        <router-link to="/">
+          <img :src="Logo" alt="Logo" />
+        </router-link>
       </div>
       <!-- Mobile menu button -->
       <div @click="showMenu = !showMenu" class="flex md:hidden">
@@ -27,7 +29,9 @@
       :class="showMenu ? 'flex' : 'hidden'"
       class="flex-col items-end mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
     >
-      <li class="menu-button"><a href="#" class="text-white">Home</a></li>
+      <li class="menu-button">
+        <router-link to="/" class="text-white">Home</router-link>
+      </li>
       <li class="menu-button">
         <a href="#event" class="text-white" v-smooth-scroll>Event</a>
       </li>

@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full bg-yellow-100" id="about">
+  <div class="w-full" id="about">
     <div class="flex flex-col-reverse">
-      <Splide
+      <!-- <Splide
         :options="options"
         aria-label="My Favorite Images"
         class="w-[100vw]"
@@ -18,7 +18,15 @@
             </div>
           </div>
         </SplideSlide>
-      </Splide>
+      </Splide> -->
+      <div
+        class="flex flex-col md:flex-row justify-center text-center items-center"
+        :class="index % 2 === 1 ? 'odd' : 'even'"
+      >
+        <div class="flex flex-col items-between justify-center w-full md:w-1/2">
+          <img :src="FlierTwo" />
+        </div>
+      </div>
       <div>
         <div
           class="my-6 mx-12 text-yellow-500 font-bold text-center flex justify-center items-center"

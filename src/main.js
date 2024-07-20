@@ -9,7 +9,7 @@ import Homepage from "./sections/HomePage.vue";
 const routes = [
   //   { path: "/", component: App },
   { path: "/", component: Homepage },
-  { path: "/readmore", component: ReadMore },
+  { path: "/readmore/:id", component: ReadMore },
 ];
 
 const router = createRouter({

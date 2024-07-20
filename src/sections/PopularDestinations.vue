@@ -1,6 +1,6 @@
 <template>
   <div class="w-full md:pb-10 bg-yellow-100" id="event">
-    <div class="my-10 mx-12 text-3xl font-bold text-center text-yellow-500">
+    <div class="mx-12 text-3xl font-bold text-center text-yellow-500 pt-12">
       <h1>Meet the Stakeholders</h1>
     </div>
 
@@ -32,7 +32,7 @@
                 {{ item.shortBio }}
                 <router-link
                   class="text-sky-800 md:text-xl lg:text-2xl font-bold text-sm"
-                  to="/readmore"
+                  :to="`/readmore/${item.id}`"
                 >
                   Read Full Bio
                 </router-link>
