@@ -1,8 +1,8 @@
 <template>
   <div class="w-full md:pb-10" id="event">
-    <!-- <div class="my-6 mx-12 text-3xl font-bold border-2">
-      <h1>Speakers</h1>
-    </div> -->
+    <div class="my-10 mx-12 text-3xl font-bold text-center text-yellow-500">
+      <h1>Meet the Speakers</h1>
+    </div>
 
     <div>
       <Splide
@@ -16,7 +16,7 @@
             :class="index % 2 === 1 ? 'odd' : 'even'"
           >
             <div
-              class="flex flex-col items-between gap-4 justify-center w-full md:w-1/2"
+              class="flex flex-col items-between md:gap-4 justify-center w-full md:w-1/2"
             >
               <div
                 class="mx-6 text-sm md:text-xl lg:text-2xl font-light md:font-extralight"
@@ -56,7 +56,7 @@ import "@splidejs/vue-splide/css";
 import SpeakerOne from "../assets/Speaker1.jpg";
 import SpeakerTwo from "../assets/Speaker2.jpg";
 import SpeakerThree from "../assets/Speaker3.jpg";
-// import SpeakerFour from "../assets/Speaker5.jpg";
+import SpeakerFour from "../assets/Speaker4.jpeg";
 import SpeakerFive from "../assets/Speaker5.jpg";
 import SpeakerSix from "../assets/Speaker6.jpg";
 
@@ -81,8 +81,16 @@ const options = {
 
 const slides = [
   {
+    id: 4,
+    title: "Disruptive Marketplace Mentor (Host)",
+    image: SpeakerFour,
+    name: "Dr. Mannaseh Dogon",
+    shortBio:
+      "Manasseh Dogon is the metropolitan lead steward of THE METROPOLITAN CHURCH, a movement and a ministry commissioned with the vision of “raising a breed that will reveal God’s glory, infiltrate governments and command influence” headquartered in Abuja, Nigeria.",
+  },
+  {
     id: 1,
-    title: "Lead Pst. Eden Centre",
+    title: "CEO of Akin Akinpelu Learning & Development(AAL&D)",
     image: SpeakerOne,
     name: "Dr. Akin Akinpelu",
     shortBio:
@@ -103,13 +111,6 @@ const slides = [
     name: "HON. Justice Mabel T. Segun Bello",
     shortBio: "Honorable Judge of the Federal High Court, Nigeria.",
   },
-  // {
-  //   id: 4,
-  //   title: "Bangdon shores kabani",
-  //   image: SpeakerThree,
-  //   name: "China",
-  //   language: "Mandarin",
-  // },
   {
     id: 5,
     title: "Social Entrepreneur and Private Investor",

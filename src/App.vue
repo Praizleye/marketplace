@@ -2,10 +2,10 @@
   <div class="banner-1 pb-12">
     <NavBar />
 
-    <div class="flex items-center justify-center gap-3 mt-10 md:mt-16">
+    <div class="flex items-center justify-center gap-2 mt-10 md:mt-16">
       <div class="">
         <h1
-          class="3xl:text-10xl 2xl:text-8xl xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-Eczar font-bold leading-tight text-white"
+          class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-Eczar font-bold leading-tight text-white"
         >
           <a
             href="https://www.linkedin.com/"
@@ -19,7 +19,7 @@
 
       <div class="">
         <h1
-          class="3xl:text-10xl 2xl:text-[9rem] xl:text-[8rem] lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-sans leading-loose text-yellow-500 font-light"
+          class="text-3xl sm:text-8xl md:text-8xl lg:text-9xl xl:text-[10rem] font-sans leading-loose text-yellow-500 font-light"
         >
           AFRICA
         </h1>
@@ -51,9 +51,8 @@
     </div>
   </div>
 
-  <PopularDestinations />
-
   <AboutSection />
+  <PopularDestinations />
 
   <!-- <div class="banner-2 space-y-10 pb-20" id="work">
     <h3 class="heading3 my-5">My Recent Work</h3>

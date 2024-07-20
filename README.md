@@ -12,7 +12,7 @@
   </kbd>
 </p>
 
-### **[click here to see Demo](https://desinger-portfolio.netlify.app/)**.
+<!-- ### **[click here to see Demo](https://desinger-portfolio.netlify.app/)**. -->
 
 ## Sections
 
@@ -50,5 +50,3 @@ No Restrictions, you can edit, add & sell.
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-Credit goes to : [Adam Wathan](https://codepen.io/adamwathan/pen/QWLEJGr) for portfolio section
