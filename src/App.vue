@@ -240,7 +240,7 @@
   </div> -->
 
   <div
-    class="banner-1 flex flex-col h-full items-center justify-center"
+    class="banner-1 flex flex-col h-full items-center justify-center relative -top-10"
     style="background-color: yellow"
   >
     <div class="flex justify-center items-center">
@@ -342,7 +342,7 @@
     </div>
   </div>
   <div
-    class="text-center bg-yellow-400 py-2 text-black font-bold"
+    class="text-center bg-yellow-400 py-2 text-black font-bold relative -top-10"
     style="background-color: yellow"
   >
     &copy; 2024
