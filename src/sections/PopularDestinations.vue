@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full md:pb-10" id="event">
+  <div class="w-full md:pb-10 bg-yellow-100" id="event">
     <div class="my-10 mx-12 text-3xl font-bold text-center text-yellow-500">
-      <h1>Meet the Speakers</h1>
+      <h1>Meet the Stakeholders</h1>
     </div>
 
     <div>
@@ -30,11 +30,12 @@
               </div>
               <div class="text-xs md:text-xl lg:text-2xl my-6 mx-6">
                 {{ item.shortBio }}
-                <span
+                <router-link
                   class="text-sky-800 md:text-xl lg:text-2xl font-bold text-sm"
+                  to="/readmore"
                 >
                   Read Full Bio
-                </span>
+                </router-link>
               </div>
             </div>
             <img
@@ -59,6 +60,7 @@ import SpeakerThree from "../assets/Speaker3.jpg";
 import SpeakerFour from "../assets/Speaker4.jpeg";
 import SpeakerFive from "../assets/Speaker5.jpg";
 import SpeakerSix from "../assets/Speaker6.jpg";
+import { RouterLink } from "vue-router";
 
 const options = {
   type: "loop",
