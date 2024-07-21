@@ -31,7 +31,7 @@
         <div
           class="my-6 mx-12 text-yellow-500 font-bold text-center flex justify-center items-center"
         >
-          <h1 class="text-2xl md:text-3xl lg:text-4xl">About</h1>
+          <h1 class="text-2xl md:text-3xl lg:text-4xl">About The Event</h1>
         </div>
         <div
           class="text-center text-sm md:text-xl lg:text-2xl mt-6 px-6 pb-8 text-gray-500"

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full md:pb-10 bg-yellow-100" id="event">
     <div class="mx-12 text-3xl font-bold text-center text-yellow-500 pt-12">
-      <h1>Meet the Stakeholders</h1>
+      <h1>Meet The Stakeholders</h1>
     </div>
 
     <div>
