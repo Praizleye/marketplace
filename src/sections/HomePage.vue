@@ -61,7 +61,7 @@
       class="banner-1 flex flex-col h-full items-center justify-center relative bg-yellow-400 footer-noise"
       style="background-color: black"
     >
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center mt-3 md:mt-6">
         <div>
           <button class="text-black bg-[#fbeb10] submit-button md:block">
             <a href="https://marketplacestakeholdersafrica.online">

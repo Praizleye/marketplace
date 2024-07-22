@@ -41,7 +41,7 @@
             <img
               :src="item.image"
               :alt="item.title"
-              class="object object-cover h-[70vh] w-auto"
+              class="object object-cover h-[70vh] w-auto relative top-10"
             />
           </div>
         </SplideSlide>
