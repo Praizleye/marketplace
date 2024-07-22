@@ -1,7 +1,14 @@
 <template>
   <div>
-    <div class="bg-[#0046b5]">
+    <div class="bg-[#0046b5] noise">
       <div class="flex items-center justify-center gap-2">
+        <!-- <div class="noise">
+          <img
+            src="../assets/NoiseBg.png"
+            alt="Noise image"
+            class="w-16 h-16"
+          />
+        </div> -->
         <div class="">
           <h1
             class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-Eczar font-bold leading-tight text-white"
@@ -33,7 +40,7 @@
           class="md:flex gap-1 md:gap-10 justify-center items-center text-center"
         >
           <button
-            class="text-black bg-yellow-300 submit-button md:block mt-3 md:mt-6"
+            class="text-black bg-[#fbeb10] submit-button md:block mt-3 md:mt-6"
           >
             <a href="https://marketplacestakeholdersafrica.online">
               Register Now
@@ -51,12 +58,12 @@
     <PopularDestinations />
 
     <div
-      class="banner-1 flex flex-col h-full items-center justify-center relative"
-      style="background-color: yellow"
+      class="banner-1 flex flex-col h-full items-center justify-center relative bg-yellow-400 footer-noise"
+      style="background-color: black"
     >
       <div class="flex justify-center items-center">
         <div>
-          <button class="w-[10rem] bg-blue-500 py-3 text-white">
+          <button class="text-black bg-[#fbeb10] submit-button md:block">
             <a href="https://marketplacestakeholdersafrica.online">
               Register Now
             </a>
@@ -64,16 +71,14 @@
         </div>
       </div>
       <div class="pb-3 mt-3">
-        <div class="text-xs text-center font-bold">
+        <div class="text-xs text-center font-bold text-white">
           For Further Inquiries: +2348101346052 | +2348183135120
         </div>
       </div>
-    </div>
-    <div
-      class="text-center bg-yellow-400 py-2 text-black font-bold"
-      style="background-color: yellow"
-    >
-      &copy; 2024
+      <div class="text-center text-yellow-400 py-2 font-bold">
+        <!-- style="background-color: black" -->
+        &copy; 2024
+      </div>
     </div>
   </div>
 </template>
@@ -96,10 +101,16 @@ export default {
 };
 </script>
 
-<!-- <style scoped>
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+<style scoped>
+.footer-noise {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  background-image: url("../assets/footer-noise.png");
+  background-repeat: repeat, repeat;
+  background-repeat: repeat, repeat;
 }
-</style> -->
+.noise {
+  background-image: url("../assets/NoiseBg.png");
+}
+</style>

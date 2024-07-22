@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:pb-10 bg-yellow-100" id="event">
+  <div class="w-full md:pb-10 bg-[#0046b5]" id="event">
     <div class="mx-12 text-3xl font-bold text-center text-yellow-500 pt-12">
       <h1>Meet The Stakeholders</h1>
     </div>
@@ -19,19 +19,19 @@
               class="flex flex-col items-between md:gap-4 justify-center w-full md:w-1/2"
             >
               <div
-                class="mx-6 text-sm md:text-xl lg:text-2xl font-light md:font-extralight"
+                class="mx-6 text-sm md:text-xl lg:text-2xl font-light md:font-extralight text-white"
               >
                 {{ item.title }}
               </div>
               <div
-                class="mx-6 text-2xl md:text-4xl lg:text-6xl font-bold text-blue-800"
+                class="mx-6 text-2xl md:text-4xl lg:text-6xl font-bold text-yellow-400"
               >
                 {{ item.name }}
               </div>
-              <div class="text-xs md:text-xl lg:text-2xl my-6 mx-6">
+              <div class="text-xs md:text-xl lg:text-2xl my-6 mx-6 text-white">
                 {{ item.shortBio }}
                 <router-link
-                  class="text-sky-800 md:text-xl lg:text-2xl font-bold text-sm"
+                  class="text-yellow-400 md:text-xl lg:text-2xl font-bold text-sm"
                   :to="`/readmore/${item.id}`"
                 >
                   Read Full Bio
@@ -41,7 +41,7 @@
             <img
               :src="item.image"
               :alt="item.title"
-              class="object object-cover h-[70vh] md:h-full object-top w-full md:w-1/2"
+              class="object object-cover h-[70vh] w-auto"
             />
           </div>
         </SplideSlide>

@@ -1,6 +1,8 @@
 <template>
-  <div class="w-full" id="about">
-    <div class="flex flex-col-reverse">
+  <div class="w-full banner-1" id="about" style="background-color: #fef9c3">
+    <div
+      class="flex flex-col-reverse md:flex-row-reverse justify-center items-center w-full"
+    >
       <!-- <Splide
         :options="options"
         aria-label="My Favorite Images"
@@ -20,47 +22,28 @@
         </SplideSlide>
       </Splide> -->
       <div
-        class="flex flex-col md:flex-row justify-center text-center items-center"
-        :class="index % 2 === 1 ? 'odd' : 'even'"
+        class="flex flex-col md:flex-row justify-center text-center items-center md:w-1/2 gap-2"
       >
-        <div class="flex flex-col items-between justify-center w-full md:w-1/2">
-          <img :src="FlierTwo" />
-        </div>
+        <img
+          :src="Speaker4"
+          alt="Dr. Mannaseh Picture"
+          class="h-[90%] w-[80%] object-cover object-center"
+        />
       </div>
-      <div>
+      <div class="w-full md:w-1/2">
         <div
           class="my-6 mx-12 text-yellow-500 font-bold text-center flex justify-center items-center"
         >
           <h1 class="text-2xl md:text-3xl lg:text-4xl">About The Event</h1>
         </div>
         <div
-          class="text-center text-sm md:text-xl lg:text-2xl mt-6 px-6 pb-8 text-gray-500"
+          class="text-center text-sm md:text-xl lg:text-2xl mt-6 px-6 pb-8 text-black"
         >
-          Marketplace Stakeholders Africa is a revolutionary conference
-          organised by Maime Innovation Foundation, in collaboration with The
-          Metropolitan Church to bring together captains of industries,
-          marketplace leaders, creatives, market experts, innovators, business
-          men and women in different sectors across African countries. The event
-          will serve as a forum for open dialogue with industry stakeholders and
-          the press in an open intelligent conversation to identify prevalent
-          problems related to their respective industry and proffer contemporary
-          solutions to each of the identified industrial problems by making
-          these respective industries work through production intelligence. The
-          concept of production intelligence is basically the instinctual
-          ability to use one’s knowledge, past experience, information,
-          understanding, insight, reasoning or set of skillsto improve the
-          African economy by intelligently inventing a brand, software, machine,
-          robot, artificial intelligence, product, or produce a service that can
-          proffer solution to specific real life problem in Africa or solve a
-          specific problem in a community, organisation or the marketplace. The
-          conference will give every young entrepreneur, marketplace leader,
-          students and innovator the opportunity to gain exposure about diverse
-          industries in the marketplace from a global perspective, and thereby
-          create an enabling environment for investors to maximise every
-          untapped potential and resources spread across the African continent.
+          {{ text.length > 500 ? text.slice(0, 500) + "..." : text }}
         </div>
       </div>
     </div>
+    <img :src="AboutGroup" alt="about alt group" />
   </div>
 </template>
 
@@ -78,6 +61,8 @@ import FlierSix from "../assets/flier6.jpeg";
 import FlierSeven from "../assets/flier7.jpeg";
 import FlierEight from "../assets/flier8.jpeg";
 import FlierNine from "../assets/flier9.jpeg";
+import AboutGroup from "../assets/AboutGroup.png";
+import Speaker4 from "../assets/Speaker4.jpeg";
 
 const options = {
   type: "loop",
@@ -137,6 +122,9 @@ const slides = [
   },
 ];
 
+const text =
+  "Marketplace Stakeholders Africa is a revolutionary conference organised by Maime Innovation Foundation, in collaboration with The Metropolitan Church to bring together captains of industries marketplace leaders, creatives, market experts, innovators, business men and women in different sectors across African countries. The event will serve as a forum for open dialogue with industry stakeholders and the press in an open intelligent conversation to identify prevalent problems related to their respective industry and proffer contemporary solutions to each of the identified industrial problems by making these respective industries work through production intelligence. The concept of production intelligence is basically the instinctual ability to use one’s knowledge, past experience, information, understanding, insight, reasoning or set of skillsto improve the African economy by intelligently inventing a brand, software, machine, robot, artificial intelligence, product, or produce a service that can proffer solution to specific real life problem in Africa or solve a specific problem in a community, organisation or the marketplace. The conference will give every young entrepreneur, marketplace leader, students and innovator the opportunity to gain exposure about diverse industries in the marketplace from a global perspective, and thereby create an enabling environment for investors to maximise every untapped potential and resources spread across the African continent.";
+
 export default defineComponent({
   name: "AboutSection",
   components: {
@@ -149,6 +137,9 @@ export default defineComponent({
       options,
       FlierOne,
       FlierTwo,
+      AboutGroup,
+      Speaker4,
+      text,
     };
   },
 });
