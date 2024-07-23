@@ -33,7 +33,7 @@
         <router-link to="/" class="text-white">Home</router-link>
       </li>
       <li class="menu-button">
-        <a href="#event" class="text-white" v-smooth-scroll>Event</a>
+        <a href="#event" class="text-white" v-smooth-scroll>Stakeholders</a>
       </li>
       <li class="menu-button">
         <a href="#about" class="text-white" v-smooth-scroll>About</a>
