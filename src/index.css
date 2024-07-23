@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,6 +40,9 @@ div.app {
 }
 
 .submit-button {
+  @apply border-gray-800 border-gray-800 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-4xl py-2 px-4  lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold;
+}
+.event-button {
   @apply border-gray-800 border-gray-800 3xl:text-xl 2xl:text-xl lg:text-xl md:text-xl text-4xl py-2 px-4  lg:py-4 lg:px-8 rounded-2xl font-work_sans font-semibold;
 }
 

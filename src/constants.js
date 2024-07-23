@@ -39,7 +39,7 @@ export const fullBio = [
   },
   {
     id: 5,
-    title: "Social Entrepreneur and Private Investor",
+    title: "Social Entrepreneur and Investor",
     image: SpeakerFive,
     name: "Teniola Eleoramo",
     shortBio:

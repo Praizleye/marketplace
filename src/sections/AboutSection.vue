@@ -21,7 +21,7 @@
           </div>
         </SplideSlide>
       </Splide> -->
-      <div
+      <!-- <div
         class="flex flex-col md:flex-row justify-center text-center items-center md:w-1/2 gap-2"
       >
         <img
@@ -29,8 +29,8 @@
           alt="Dr. Mannaseh Picture"
           class="h-[90%] w-[80%] object-cover object-center"
         />
-      </div>
-      <div class="w-full md:w-1/2">
+      </div> -->
+      <div class="w-full">
         <div
           class="my-6 mx-12 text-yellow-500 font-bold text-center flex justify-center items-center"
         >
@@ -39,7 +39,8 @@
         <div
           class="text-center text-sm md:text-xl lg:text-2xl mt-6 px-6 pb-8 text-black"
         >
-          {{ text.length > 500 ? text.slice(0, 500) + "..." : text }}
+          <!-- {{ text.length > 500 ? text.slice(0, 500) + "..." : text }} -->
+          {{ text }}
         </div>
       </div>
     </div>

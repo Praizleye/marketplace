@@ -8,7 +8,7 @@
       <Splide
         :options="options"
         aria-label="My Favorite Images"
-        class="w-[100vw] mt-12"
+        class="w-[100vw] mt-12 md:mt-4"
       >
         <SplideSlide v-for="(item, index) in slides" :key="item.id">
           <div
@@ -19,14 +19,14 @@
               class="flex flex-col items-between md:gap-4 justify-center w-full md:w-1/2"
             >
               <div
-                class="mx-6 text-sm md:text-xl lg:text-2xl font-light md:font-extralight text-white"
-              >
-                {{ item.title }}
-              </div>
-              <div
                 class="mx-6 text-2xl md:text-4xl lg:text-6xl font-bold text-yellow-400"
               >
                 {{ item.name }}
+              </div>
+              <div
+                class="mx-6 text-sm md:text-xl lg:text-2xl font-light md:font-extralight text-white"
+              >
+                {{ `(${item.title})` }}
               </div>
               <div class="text-xs md:text-xl lg:text-2xl my-6 mx-6 text-white">
                 {{ item.shortBio }}
@@ -92,7 +92,7 @@ const slides = [
   },
   {
     id: 1,
-    title: "CEO of Akin Akinpelu Learning & Development(AAL&D)",
+    title: "CEO of Akin Akinpelu Learning & Development (AAL&D)",
     image: SpeakerOne,
     name: "Dr. Akin Akinpelu",
     shortBio:
@@ -104,7 +104,7 @@ const slides = [
     image: SpeakerTwo,
     name: "Stanley Onuorah",
     shortBio:
-      "popularly reputable as Online banker. He is number one financial inclusion champion in Nigeria, with over a decade experience in Fintech and also in banking across commercial banking, microfinance banking and development finance at large.",
+      "Popularly reputable as Online banker. He is number one financial inclusion champion in Nigeria, with over a decade experience in Fintech and also in banking across commercial banking, microfinance banking and development finance at large.",
   },
   {
     id: 3,
@@ -115,7 +115,7 @@ const slides = [
   },
   {
     id: 5,
-    title: "Social Entrepreneur and Private Investor",
+    title: "Social Entrepreneur and Investor",
     image: SpeakerFive,
     name: "Teniola Eleoramo",
     shortBio:
