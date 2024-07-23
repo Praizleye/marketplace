@@ -192,23 +192,28 @@
     </div>
   </div>
 </template>
-<script>
+<script setup>
 import NavBar from "../components/NavBar.vue";
 import PopularDestinations from "./PopularDestinations.vue";
 import AboutSection from "./AboutSection.vue";
 import "../index.css";
-// import { useRoute, useRouter } from 'vue-router'
-// const router = useRouter()
-// const route = useRoute()
+import { watch } from "vue";
+import { useRoute } from "vue-router";
 
-export default {
-  name: "Homepage",
-  components: {
-    NavBar,
-    PopularDestinations,
-    AboutSection,
-  },
-};
+const route = useRoute();
+// const name = "Homepage";
+// const components = {
+//   NavBar,
+//   PopularDestinations,
+//   AboutSection,
+// };
+
+watch(
+  () => route.params.id,
+  (newId, oldId) => {
+    window.scroll(0, 0);
+  }
+);
 </script>
 
 <style scoped>

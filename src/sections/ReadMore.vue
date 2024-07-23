@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-yellow-100 pb-8">
     <div class="flex flex-col-reverse justify-center items-center">
-      <div>
+      <div class="flex flex-col justify-center items-center">
         <div
           class="my-2 mx-12 text-yellow-500 font-bold text-center flex justify-center items-center"
         >
@@ -142,6 +142,7 @@ export default defineComponent({
         detailsToDisplay.value = fullBio.filter(
           (item) => item.id == (newId || route.params.id)
         );
+        window.scroll(0, 0);
         console.log("🚀 ~ setup ~ detailsToDisplay:", detailsToDisplay);
       }
     );
