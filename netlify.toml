@@ -1,0 +1,8 @@
+[build]
+  publish = "dist"  # Adjust this to match your Vue build output directory
+
+# The following redirect is intended for use with SPAs that handle routing internally
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
