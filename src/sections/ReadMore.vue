@@ -12,7 +12,7 @@
         <div class="text-center px-6 mb-2">
           {{ detailsToDisplay[0]?.title }}
         </div>
-        <img :src="detailsToDisplay[0]?.image" />
+        <img :src="detailsToDisplay[0]?.image" class="image-container"/>
         <div
           class="text-center text-sm md:text-xl lg:text-2xl mt-6 px-6 pb-8 text-gray-500"
         >
@@ -174,5 +174,13 @@ export default defineComponent({
 }
 .noise {
   background-image: url("../assets/NoiseBg.png");
+}
+
+.image-container {
+  width: 100%;
+  max-height: 100vh;
+  max-width: 600px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 </style>
